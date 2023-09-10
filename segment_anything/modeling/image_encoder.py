@@ -168,7 +168,7 @@ class Block(nn.Module):
         x = self.norm1(x)
 
         # Initialize pad_hw to a default value or a safe fallback
-        pad_hw = None
+        pad_hw = (0,0)
 
         # Window partition
         if self.window_size > 0:
